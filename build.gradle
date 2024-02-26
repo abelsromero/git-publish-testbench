@@ -1,0 +1,28 @@
+plugins {
+    id 'org.ajoberstar.git-publish' version '4.2.2'
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    currentBranch = 'main'
+}
+
+gitPublish {
+    repoUri = 'https://github.com/abelsromero/git-publish-testbench'
+    branch = 'gh-pages'
+
+    contents {
+        into currentBranch
+        from file('src/docs')
+    }
+
+    preserve {
+        include '**'
+        exclude "${currentBranch}/**"
+    }
+
+    commitMessage = "Updating SNAPSHOT documentation for ${currentBranch} at ${version}"
+}

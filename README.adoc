@@ -1,0 +1,3 @@
+= gi-publish Gradle plugin tests
+
+Testing https://github.com/ajoberstar/gradle-git-publish[gradle-git-publish]...

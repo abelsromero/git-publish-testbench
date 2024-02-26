@@ -1,0 +1,4 @@
+rootProject.name='asciidoctor-gradle-docs'
+
+include 'antora'
+include 'gh-pages'
