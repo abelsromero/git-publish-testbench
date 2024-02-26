@@ -11,7 +11,7 @@ ext {
 }
 
 gitPublish {
-    repoUri = 'https://github.com/abelsromero/git-publish-testbench'
+    repoUri = 'git@github.com:abelsromero/git-publish-testbench.git'
     branch = 'gh-pages'
 
     contents {
